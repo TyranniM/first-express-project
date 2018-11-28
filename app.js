@@ -2,17 +2,23 @@ const express = require('express');
 // creating new instance of express server
 const app = express();
 
+
+//make a route for the about page of the website( app.get(): makes route )
+
 // app.get('/', (request,response)=> {
 app.get('/', (req, res) => {
-    res.send("Hello World!");
+    res.send("HomePage!");
 });
 
-app.get('/about', (req, res) => {
-    res.send("Hello World!");
+app.get('/help', (req, res) => {
+    res.send("HelpMe!");
+});
+
+app.get('/contact', (req, res) => {
+    res.send("ContactMe!");
 });
 
 
-//make a route for the about page of the website
 
 
 
